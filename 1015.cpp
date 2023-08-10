@@ -1,25 +1,15 @@
-#include<stdio.h>
-//#include<math.h>
-int main()
+#include <stdio.h>
+#include<math.h>
 
-{
+int main() {
 
-int a,b,c,d;
-scanf("%d%d%d",&a,&b,&c);
-//d=0.5*(a+b+abs(a-b));
-if(a>b||a>c)
-{
-	printf("%d eh o maior\n",a);
-}
-/*if(b>a||b>c)
-{
-	printf("%d eh o maior\n",b);
-}*/
-else{
+    double x1,x2,y1,y2, Distance;
+    scanf("%lf%lf%lf%lf", &x1,&y1,&x2,&y2);
+    Distance = sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
 
-printf("%d eh o maior\n",c);
-}
-return 0;
+    printf("%.4lf\n", Distance);
+
+    return 0;
 }
 
 

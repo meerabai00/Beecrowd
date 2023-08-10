@@ -3,14 +3,15 @@ int main()
 
 {
 
-int N,b,c;
+int N,h=0,m=0,s=0;
 
 scanf("%d",&N);
-b=N/(60*60);
+h= N/3600;
+N= N%3600;
+m= N/60;
+s= N%60;
 
-c=((N-(60*60)*b)/60);
-
-printf("%d:%d:%d\n",b,c,(N-(b*60*60+c*60)));
+printf("%d:%d:%d\n",h,m,s);
 return 0;
 }
 
